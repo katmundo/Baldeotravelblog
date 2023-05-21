@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Baldeo Travel Blog</title>
+  
+    <link rel="stylesheet"  href="style1.css">
+    
+    <script>
+      // JavaScript code for header movement
+      window.addEventListener('DOMContentLoaded', function() {
+        var header = document.getElementById('header');
+        var isMouseDown = false;
+        var initialX = 0;
+        var initialY = 0;
+  
+        header.addEventListener('mousedown', function(e) {
+          isMouseDown = true;
+          initialX = e.clientX;
+          initialY = e.clientY;
+        });
+  
+        header.addEventListener('mousemove', function(e) {
+          if (isMouseDown) {
+            var offsetX = e.clientX - initialX;
+            var offsetY = e.clientY - initialY;
+            header.style.transform = 'translate(' + offsetX + 'px, ' + offsetY + 'px)';
+          }
+        });
+  
+        header.addEventListener('mouseup', function() {
+          isMouseDown = false;
+        });
+      });
+    </script>
+    
+</head>
+<body>
+
+  <header>
+    <!-- Add any content for the header here -->
+    <h3>MARK my Word</h3>
+    <nav>
+      <ul>
+        <li><a href="BaldeoTravelBlogHome.html">Home</a></li>
+        <li><a href="BaldeoTravelBlogAbout.html">About</a></li>
+        <li><a href="BaldeoTravelBlogGallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="banner">
+    <!-- Add any content for the banner here -->
+    <img src="img vid/baler11.jpg" alt="Banner Image">
+  </div>
+
+  <div id="main-content">
+    <article>
+      <h2>DAY 1: ARRIVING IN BALER</h2>
+     <p>
+      Our day started as early as 2am since Baler Aurora is 6hrs away from Obando Bulacan. 
+      I also recommend departing early so you can have an early tour in Baler without other tourists 
+      which can cause exhaustion in falling in long line in museums and parks. We arrived in Baler 
+      around 8am and we ate our first breakfast so we could have energy. Our first destination is the 
+      Baler Park where there is a big Baler signage where you can take pictures. On the side of the park
+       you can also visit the Baler church which is historic because it plays an important role during the 
+       siege of baler. The next thing we visited is the house of Dona Aurora Quezon House which is located 
+       in the front of the church. Inside the house you can see many antics that were used by the late president
+        Manuel L Quezon and of course by Dona Aurora like books, clothes and many more which is amazing that they
+       preserve those kinds of things. The next place we visit is the Museo de Baler which is located across from 
+        Baler park. The museum has many historical facts about the town. There are also many things and visuals like 
+        paintings, pictures, clothes and many more which is very informative. The House of Dona Aurora and Museo de Baler
+        has an entrance fee which is only less than 100 which is very affordable and for me it is worth it because I love
+        history and i appreciate those things. After taking many pictures and a lot of walking we decided to eat our lunch 
+       and there are many buffet places which only range from 199 to 400 which is worth it and it has many choices and it 
+        was delicious. After that we could now check in at our hotel to have some rest. Our hotel is facing the Sabang
+        beach which you could easily enjoy the sea anytime you want. We really enjoy it as a family because the waves
+        are very high and there are people also riding their surfing boards that's why you need to be cautious of your
+        surroundings while swimming because it might hit you. After a long day we eat our dinner and have some coffee
+        afterwards. I might say our first day in baler is very tiring yet it is one of my most unforgettable vacations 
+        with my family.
+     </p>
+    </article>
+
+
+    <article>
+      <h2>DAY 2: DEPARTING FROM BALER </h2>
+      <p>
+        First thing in the morning we eat our breakfast luckily our hotel offers different silog and coffee. Afterwards 
+        we go back again to the beach for one last time since we need to go by 12pm. We took some pictures on the beach 
+        and even though we didn't want to go back to the hotel we didn't have a choice. We are preparing to go on tour 
+        again before going home but we already loaded our things and bags since we need to check out already. We ate first 
+        lunch so we could have enough energy to walk and tour again. Our first destination is the Ermita Hill which is very 
+        high and has many stairs but the view upstairs is worth it and you can also take pictures there. The soil there is dirty 
+        and can mess with your shoes that's why i recommend you to wear slippers or shoes that are not white. The next place we 
+        went is the hanging bridge that is very scary since there are many people in it. The last place we went is the baler port 
+        where you could take pictures of the sea and rock formation around it. After that we need to go home since it is already 
+        4pm and our journey is long. It's sunday that's why there's traffic everywhere we only eat our dinner around 10pm in NLEX.
+         We safely return around 12am it is tiring but it is so much fun and we wanted to return again maybe this year.
+      </p>
+    </article>
+  </div>
+
+  <aside id="sidebar">
+    <!-- Add any content for the sidebar here -->
+    <h3>Trivia:</h3>
+    <ul>
+      <p>
+        Baler is a small town in Aurora Province on the east coast of Luzon in the Philippines. 
+        It is situated between the Sierra Madre mountain range and the Pacific Ocean, in the vast plain
+         at the mouth of Baler's Bay.
+      </p>
+    </ul>
+  </aside>
+
+  <footer>
+    <!-- Add any content for the footer here -->
+    <p>&copy; 
+    BALER.2022
+        
+    </p>
+  </footer>
+
+</body>
+</html>
